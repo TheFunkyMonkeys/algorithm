@@ -1,4 +1,4 @@
-package 대동.stack;
+package 스터디.stack;
 
 /* https://www.acmicpc.net/problem/3986 */
 
