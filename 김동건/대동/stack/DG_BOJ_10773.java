@@ -1,4 +1,6 @@
-package stack;
+package 대동.stack;
+
+/* https://www.acmicpc.net/problem/10773 */
 
 import java.io.BufferedReader;
 import java.io.IOException;
