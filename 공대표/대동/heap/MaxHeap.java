@@ -41,7 +41,7 @@ public class MaxHeap {
         heap.set(1, heap.get(heap.size() - 1)); /* 삭제하려는 루트노드에 마지막 노드 값 넣어주기 */
         heap.remove(heap.size() - 1);
 
-        int pos = 1; /* position 루트 노드로 최초 설정 index */
+        int pos = 1; /* position 루트 노드로 최초 설정 == index */
         while ((pos * 2) < heap.size()) {
             /* 왼쪽 자식 노드 인덱스를 heap.size와 비교하여 자식이 있는지 유무 판단 */
             int max = heap.get(pos * 2);
@@ -65,5 +65,9 @@ public class MaxHeap {
         }
 
         return deleteNode;
+    }
+
+    public int size() {
+        return heap.size();
     }
 }
