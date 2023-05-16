@@ -1,4 +1,4 @@
-package 대동.brute_force;
+package 대동.백준.brute_force;
 
 /* https://www.acmicpc.net/problem/4673 */
 

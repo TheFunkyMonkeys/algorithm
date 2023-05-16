@@ -1,4 +1,4 @@
-package 대동.greedy;
+package 대동.백준.greedy;
 
 /* https://www.acmicpc.net/problem/13305 */
 

@@ -1,4 +1,4 @@
-package 대동.heap;
+package 대동.백준.heap;
 
 import java.util.ArrayList;
 

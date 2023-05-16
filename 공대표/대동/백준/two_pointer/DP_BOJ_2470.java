@@ -1,6 +1,6 @@
-package 대동.two_pointer;
+package 대동.백준.two_pointer;
 
-/* https://www.acmicpc.net/problem/2467 */
+/* https://www.acmicpc.net/problem/2470 */
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class DP_BOJ_2467 {
+public class DP_BOJ_2470 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int solutionA = 0, solutionB = 0;

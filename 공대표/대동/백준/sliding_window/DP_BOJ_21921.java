@@ -1,4 +1,4 @@
-package 대동.sliding_window;
+package 대동.백준.sliding_window;
 
 /* https://www.acmicpc.net/problem/21921 */
 

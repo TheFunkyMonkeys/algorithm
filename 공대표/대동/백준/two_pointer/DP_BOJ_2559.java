@@ -1,4 +1,4 @@
-package 대동.two_pointer;
+package 대동.백준.two_pointer;
 
 /* https://www.acmicpc.net/problem/2559 */
 

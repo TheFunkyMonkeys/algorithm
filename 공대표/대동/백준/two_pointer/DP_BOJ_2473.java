@@ -1,4 +1,4 @@
-package 대동.two_pointer;
+package 대동.백준.two_pointer;
 
 /* https://www.acmicpc.net/problem/2473 */
 /* 2473번과 유사한 문제인 2470번은 입력이 100,000 이였지만 2473번은 5,000 이므로 O(n2) 이여도 시간초과가 나지 않는다. 주어진 입력, 시간 등 조건을 잘 보길 바람. */
