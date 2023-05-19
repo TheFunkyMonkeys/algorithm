@@ -1,4 +1,4 @@
-package 대동.코드스테이츠.알고리즘;
+package 코드스테이츠.알고리즘;
 
 public class 보드게임 {
     public static void main(String[] args) {

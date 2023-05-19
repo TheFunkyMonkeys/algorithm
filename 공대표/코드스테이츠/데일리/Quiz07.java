@@ -1,4 +1,4 @@
-package 대동.코드스테이츠.데일리;
+package 코드스테이츠.데일리;
 
 import java.util.HashMap;
 

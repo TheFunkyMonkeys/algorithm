@@ -1,4 +1,4 @@
-package 대동.코드스테이츠.알고리즘;
+package 코드스테이츠.알고리즘;
 
 import java.util.Arrays;
 
