@@ -1,35 +1,48 @@
 package 대동.recursion;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+/* https://www.acmicpc.net/problem/10994 */
+
+import java.io.*;
+import java.util.Arrays;
 
 public class DG_BOJ_10994 {
+
+    public static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        recursion(0, n);
+        recursion(1, n);
+        bw.close();
     }
 
-    public static void recursion(int countPoint, int n) {
-        String[] arr = new String[1 + (4 * (n - 1))];
+    public static void recursion(int countPoint, int n) throws IOException {
+        print(countPoint, n);
         if (countPoint == n * 2 - 1) {
-            for (int i = 0; i < arr.length; i += 2) {
-                arr[i] = "*";
-                for (int j = 1; j < arr.length; j += 2) {
-                    arr[j] = " ";
-                }
-            }
-            for (String s : arr) {
-                System.out.print(s);
-            }
             return;
         }
-        if (countPoint % 2 == 0) {
-            for ()
-        } else {
-
-        }
         recursion(++countPoint, n);
+        print(--countPoint, n);
+    }
+
+    public static void print(int countPoint, int n) throws IOException {
+        String[] arr = new String[4 * n - 3];
+        if (countPoint % 2 != 0) {
+            Arrays.fill(arr, "*");
+            for (int i = 1; i < countPoint; i += 2) {
+                arr[i] = " ";
+                arr[4 * n - 4 - i] = " ";
+            }
+        } else {
+            Arrays.fill(arr, " ");
+            for (int i = 0; i < countPoint - 1; i += 2) {
+                arr[i] = "*";
+                arr[4 * n - 4 - i] = "*";
+            }
+        }
+        for (String s : arr) {
+            bw.write(s);
+        }
+        bw.write("\n");
     }
 }
