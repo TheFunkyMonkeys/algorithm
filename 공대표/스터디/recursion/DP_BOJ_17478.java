@@ -1,4 +1,4 @@
-package 대동.백준.recursion;
+package 스터디.recursion;
 
 /* https://www.acmicpc.net/problem/17478 */
 
