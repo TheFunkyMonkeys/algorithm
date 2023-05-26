@@ -1,5 +1,7 @@
 package 스터디.recursion;
 
+/* https://www.acmicpc.net/problem/18511 */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -28,25 +30,20 @@ public class DG_BOJ_18511 {
 
         Arrays.sort(target, Collections.reverseOrder());
 
-        recursion(0, 0);
-        System.out.println(max);
+        System.out.print(recursion(0));
     }
 
-    public static void recursion(int num, int cnt) {
-        if (cnt == target.length) {
-            return;
-        }
-
+    public static int recursion(int num) {
         for (int i = 0; i < target.length; i++) {
             num += target[i];
             if (num <= n) {
                 if (num > max) {
                     max = num;
-
                 }
+                max = recursion(num * 10);
             }
-            recursion(num * 10, cnt + 1);
             num -= target[i];
         }
+        return max;
     }
 }
