@@ -34,16 +34,23 @@ public class DG_BOJ_18511 {
     }
 
     public static int recursion(int num) {
+        if (Integer.toString(num).length() > Integer.toString(n).length()) {
+            return max;
+        }
+
         for (int i = 0; i < target.length; i++) {
             num += target[i];
+
             if (num <= n) {
                 if (num > max) {
                     max = num;
                 }
                 max = recursion(num * 10);
             }
+
             num -= target[i];
         }
+
         return max;
     }
 }
