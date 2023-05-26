@@ -45,7 +45,7 @@ public class DG_BOJ_18511 {
                 if (num > max) {
                     max = num;
                 }
-                max = recursion(num * 10);
+                recursion(num * 10);
             }
 
             num -= target[i];
